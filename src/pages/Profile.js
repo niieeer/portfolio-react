@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 
-const Home = () => {
+const Profile = () => {
     return (
-        <div className=''>
+        <div>
             <Navigation />
-            <h1>Acceuil</h1>
+            <h1>Le profil</h1>
         </div>
     );
 };
 
-export default Home;
+export default Profile;
