@@ -2,3 +2,31 @@ h1 {
     text-align: center;
     padding: 2rem;
 }
+
+.container {
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://www.potentiel-humain.eu/wp-content/uploads/2020/09/programming.jpg),;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .container-title {
+        background-color: black;
+        border-radius: 1rem;
+        margin: 1rem;
+        cursor: pointer;
+    }
+}
+
+.profil-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
