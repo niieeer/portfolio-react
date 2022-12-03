@@ -9,14 +9,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://www.potentiel-humain.eu/wp-content/uploads/2020/09/programming.jpg),;
+    background: url(https://f.hellowork.com/blogdumoderateur/2020/06/formation-developpement-application-1200x801.jpg),;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 
     .container-title {
         background-color: black;
-        border-radius: 1rem;
         margin: 1rem;
         cursor: pointer;
     }
@@ -25,8 +24,8 @@ h1 {
 .profil-container {
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     gap: 1rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }

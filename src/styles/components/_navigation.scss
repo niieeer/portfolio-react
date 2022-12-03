@@ -19,7 +19,11 @@
         display: flex;
         gap: 2rem;
     }
-
+    .active {
+        background-color: white;
+        color: black;
+        
+    }
     a {
         text-decoration: none;
         color: white;
@@ -27,7 +31,6 @@
 
         li {
             list-style: none;
-
         }
     }
 }

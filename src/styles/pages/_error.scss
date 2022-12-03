@@ -1,0 +1,24 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    font-size: 3rem;
+    
+    .error-code {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    
+    .error-type {
+        font-weight: 500;
+        font-size: 3rem;
+    }
+    .explanation-error {
+        color: rgba(0, 0, 0, 0.538);
+        font-size: large;
+        margin-bottom: 2rem;
+    }
+}
