@@ -9,7 +9,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://f.hellowork.com/blogdumoderateur/2020/06/formation-developpement-application-1200x801.jpg),;
+    background: url(https://cdn.futura-sciences.com/buildsv6/images/wide1920/6/5/2/65251a0416_50149063_2-developpeur-informatique1.jpg),;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -21,11 +21,34 @@ h1 {
     }
 }
 
-.profil-container {
+#profil-container {
     height: 100vh;
     display: flex;
     flex-direction:row;
     gap: 1rem;
     justify-content: space-around;
     align-items: center;
+
+    .fit-picture {
+        height: 100%;
+        object-fit: cover;
+    }
+    .profil-desc {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 2rem;
+        gap: 1rem;
+    }
+}
+.perk {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+    }
 }

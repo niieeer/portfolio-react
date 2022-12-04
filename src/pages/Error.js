@@ -11,7 +11,7 @@ const Error = () => {
                 <p className='error-type'>Not Found</p>
                 <p className='explanation-error'>The ressource requested could not be found on this server!</p>
             </div>
-            <Navigate from="*" to="/"/>
+            {/* <Navigate from="*" to="/"/> */}
         </div>
     );
 };
