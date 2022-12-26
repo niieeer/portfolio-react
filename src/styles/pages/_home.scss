@@ -6,10 +6,12 @@ h1 {
 .container {
     height: 100vh;
     color: white;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://cdn.futura-sciences.com/buildsv6/images/wide1920/6/5/2/65251a0416_50149063_2-developpeur-informatique1.jpg),;
+    background-color: bisque;
+    background: url(https://cdn.futura-sciences.com/buildsv6/images/wide1920/6/5/2/65251a0416_50149063_2-developpeur-informatique1.jpg), ;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -24,7 +26,7 @@ h1 {
 #profil-container {
     height: 100vh;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     gap: 1rem;
     justify-content: space-around;
     align-items: center;
@@ -33,6 +35,7 @@ h1 {
         height: 100%;
         object-fit: cover;
     }
+
     .profil-desc {
         display: flex;
         flex-direction: column;
@@ -41,14 +44,66 @@ h1 {
         gap: 1rem;
     }
 }
+
 .perk {
     height: 100vh;
     width: 100vw;
     background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
+    padding: 2rem;
 
     h2 {
         text-align: center;
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+}
+
+.perk-description {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        li {
+            font-size: 2rem;
+            font-weight: 700;
+            background-color: rgba(255, 255, 255, 0);
+            transition: 0.2s;
+
+            &:hover {
+                background-color: rgba(22, 159, 218, 0.169);
+                transition: 0.4s;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 875px) {
+    #profil-container {
+        flex-direction: column;
+        justify-content: center;
+
+        .fit-picture {
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        .profil-desc {
+            padding: 2rem;
+            text-align: center;
+            width: 100%;
+            font-size: 2rem;
+            gap: 3rem;
+
+            h2 {
+                text-align: left;
+                margin-left: 10%;
+            }
+        }
     }
 }

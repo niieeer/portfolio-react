@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
-import image from '../styles/images/homme.png'
+
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
             {/* Container 2 */}
             <div id='profil-container'>
                 <img class="fit-picture"
-                    src={image}
+                    src='./images/homme.png'
                     alt="Moi"
                     height="800px" />
                 <div className='profil-desc'>
@@ -24,6 +24,28 @@ const Home = () => {
             </div>
             {/* Container 3 */}
             <div className='perk'>
+                    <h2>Project developed during my formation :</h2>
+                <div className='perk-description'>
+                    <ul>
+                        <li>
+                            ProjectSchool
+                            <p>Projet visant à ce que prof et éleve puissent consulter les notes ajouté.
+                                C'est un travail réalisé en duo !
+                            </p>
+                            <a href="https://github.com/niieeer/ProjectSchool-Front">Github</a>
+                        </li>
+                        <li>
+                            NoodCat
+                            <p>Le but de l'application est de pouvoir réserver une table dans un bar à chat.</p>
+                            <a href="https://github.com/niieeer/NoodCat">Github</a>
+                        </li>
+                        <li>
+                            Dentiio
+                            <p>Le client peut consulter ses avancées médicales ainsi que prendre rendez-vous et parler avec son dentiste.</p>
+                            <a href="https://github.com/PaulineMahut/dentiio">Github</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <Footer />
         </div>
