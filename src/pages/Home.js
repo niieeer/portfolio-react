@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import Perk from '../components/Perk';
@@ -26,7 +27,8 @@ const Home = () => {
             </div>
             {/* Container 3 */}
             <Perk />
-
+            {/* Container 4 */}
+            <Contact />
             {/* Footer */}
             <Footer />
         </div>

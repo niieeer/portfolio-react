@@ -8,7 +8,7 @@ const Perk = () => {
                 <ul>
                     <li>
                         <div>
-                            ProjectSchool
+                            <h4>ProjectSchool</h4>
                             <p>Projet visant à ce que prof et éleve puissent consulter les notes ajouté.
                                 C'est un travail réalisé en duo !
                             </p>
