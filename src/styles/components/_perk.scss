@@ -18,6 +18,9 @@
         gap: 2rem;
 
         li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             font-size: 2rem;
             font-weight: 700;
             background-color: rgba(255, 255, 255, 0);
@@ -26,6 +29,10 @@
             &:hover {
                 background-color: rgba(22, 159, 218, 0.169);
                 transition: 0.4s;
+            }
+
+            div {
+
             }
         }
 
