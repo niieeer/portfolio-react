@@ -1,31 +1,38 @@
 import React from 'react';
 import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
 
-    const emailInputRef = useRef();
-    const nomInputRef = useRef();
-    const textInputRef = useRef();
-
     // Récupération et vérification de la valeur des champs input et envoie des données au serveur 
-    const submitHandler = (event) => {
-
+    const form = useRef();
+    console.log(process.env.REACT_APP_SERVICE_ID);
+    
+    // Envoie des données
+    const sendEmail = (event) => {
         event.preventDefault();
 
-        console.log(emailInputRef.current.value);
-
-        // Envoie des données
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_USER_ID)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     }
 
 
     return (
         <div className='contact-container'>
             <h2>Démarrons un projet ensemble, n’hésitez pas à me contacter</h2>
-            <form action="" onSubmit={submitHandler}>
-                <input type="text" ref={nomInputRef} placeholder='Nom' minLength="1" maxLength="20" required />
-                <input type="email" ref={emailInputRef} placeholder='Adresse e-mail' maxLength="50" required />
-                <textarea placeholder='Votre message' ref={textInputRef} required maxLength="1000"></textarea>
+            <form action="" ref={form} onSubmit={sendEmail}>
+                <input type="text" placeholder='Nom' minLength="1" maxLength="20" required />
+                <input type="email" placeholder='Adresse e-mail' maxLength="50" required />
+                <textarea placeholder='Votre message' required maxLength="1000"></textarea>
                 <input type="submit" value="Me contacter" />
             </form>
         </div>

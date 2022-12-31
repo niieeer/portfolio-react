@@ -16,7 +16,7 @@ const Home = () => {
             </div>
             {/* Container 2 */}
             <div id='profil-container'>
-                <img class="fit-picture"
+                <img className="fit-picture"
                     src='./images/homme.png'
                     alt="Moi"
                     height="800px" />

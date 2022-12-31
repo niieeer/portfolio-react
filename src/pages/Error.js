@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import { Navigate } from "react-router-dom";
 
 const Error = () => {
     return (
