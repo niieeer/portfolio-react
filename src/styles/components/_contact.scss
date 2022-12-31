@@ -13,10 +13,9 @@
 
         input {
             padding: 1rem;
-            border: none;
-            border-bottom: solid black;
+            
 
-            &[type=submit]{
+            &[type=submit] {
                 background-color: black;
                 color: white;
                 cursor: pointer;
@@ -29,16 +28,14 @@
                 color: white;
                 transition: 0.2s;
             }
-            
+
         }
 
         textarea {
             padding: 1rem;
             resize: none;
             height: 15vh;
-            border: solid black;
-            border-radius: 2%;
+            border: solid 1px black;
         }
-
     }
 }
