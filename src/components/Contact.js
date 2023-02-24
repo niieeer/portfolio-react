@@ -27,12 +27,12 @@ const Contact = () => {
 
     return (
         <div className='contact-container'>
-            <h2>Démarrons un projet ensemble, n’hésitez pas à me contacter</h2>
+            <h2 className='card-title'>Let's start a project together, don't hesitate to contact me</h2>
             <form action="" ref={form} onSubmit={sendEmail}>
-                <input type="text" placeholder='Nom' minLength="1" name="user_name" maxLength="20" required />
-                <input type="email" placeholder='Adresse e-mail' name="user_email" maxLength="50" required />
-                <textarea placeholder='Votre message' name="message" maxLength="1000" required />
-                <input type="submit" value="Me contacter" />
+                <input className='input input-bordered w-full' type="text" placeholder='Name' minLength="1" name="user_name" maxLength="20" required />
+                <input className='input input-bordered w-full' type="email" placeholder='Adresse e-mail' name="user_email" maxLength="50" required />
+                <textarea className="textarea textarea-bordered" placeholder='Your message' name="message" maxLength="1000" required />
+                <input className='btn btn-active btn-primary' type="submit" value="Contact me" />
             </form>
         </div>
     );
