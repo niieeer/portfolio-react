@@ -3,7 +3,7 @@ import Card from './Perk/Card';
 
 const Perk = () => {
     return (
-        <div className='perk'>
+        <div id='perks' className='perk'>
            <Card/>
            <Card/>
            <Card/>

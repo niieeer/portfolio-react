@@ -30,7 +30,7 @@ const Contact = () => {
             <h2 className='card-title'>Let's start a project together, don't hesitate to contact me</h2>
             <form action="" ref={form} onSubmit={sendEmail}>
                 <input className='input input-bordered w-full' type="text" placeholder='Name' minLength="1" name="user_name" maxLength="20" required />
-                <input className='input input-bordered w-full' type="email" placeholder='Adresse e-mail' name="user_email" maxLength="50" required />
+                <input className='input input-bordered w-full' type="email" placeholder='Your email' name="user_email" maxLength="50" required />
                 <textarea className="textarea textarea-bordered" placeholder='Your message' name="message" maxLength="1000" required />
                 <input className='btn btn-active btn-primary' type="submit" value="Contact me" />
             </form>
