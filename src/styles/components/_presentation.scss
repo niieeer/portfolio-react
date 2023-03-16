@@ -1,0 +1,40 @@
+// Section présentation avec background !
+#p-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: {
+        image: url('~/public/images/background/bg.jpg');
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+        color: rgb(32, 31, 31);
+        attachment: fixed;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        font-size: calc(25px + 3vw);
+        border-radius: 1rem;
+        color: rgb(43, 107, 70);
+        animation: 1s ease-in fadeLeftToRight;
+    }
+}
+
+@keyframes fadeLeftToRight {
+    0% {
+        transform: translatey(50%);
+        color: rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: translatey(0);
+    }
+}
+
+@media screen and (max-width: 900px) {}

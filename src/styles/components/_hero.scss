@@ -1,11 +1,90 @@
-.hero {
-    backdrop-filter: blur(20%);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#h-container {
+    height: 100vh;
+    padding: 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        font-size: calc(30px + 1vw);
+        text-decoration: underline;
+    }
+
+    .bt-c {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        button {
+            font-size: calc(15px + 1vw);
+            padding: calc(1rem + 1vw);
+            border-radius: 40px;
+            border: none;
+            cursor: pointer;
+        }
+    }
 }
 
-.hero-overlay {
-    backdrop-filter: blur(10px);
+.container-d {
+    display: flex;
+    font-size: calc(10px + 1vw);
+    gap: calc(5%);
+    margin: calc(5%);
+    animation: 3s ease slideTopFromBottom;
+
+
+
+    .left-d {
+        width: 30%;
+
+        img {
+            width: calc(100%);
+        }
+    }
+
+    .right-d {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: calc(5% + 1vw);
+        text-align: justify;
+        letter-spacing: 1px;
+        overflow: scroll;
+        transform: translateY(500px, 0px) ;
+    }
+}
+
+@keyframes slideTopFromBottom {
+    25% {
+      transform: translatey(50%);
+      color: rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translatey(0);
+    }
+  }
+
+@media screen and (max-width: 1200px) {
+    .container-d {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .left-d {
+            width: 30%;
+            text-align: center;
+
+            img {
+                width: calc(80%);
+                margin-bottom: 1rem;
+            }
+        }
+
+        .right-d {
+            gap: calc(1rem + 1vw);
+        }
+    }
 }

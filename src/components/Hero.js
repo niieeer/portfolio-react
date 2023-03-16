@@ -2,18 +2,28 @@ import React from 'react';
 
 const Hero = () => {
     return (
-        <div className="hero min-h-screen" style={{ backgroundImage: `url("../../../images/back.jpg")` }}>
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Web Developer</h1>
-            <p className="mb-5">I am looking for a permanent job (full time) in Reims and surroundings from December 2022.
-</p>
-            <button className="btn btn-primary"><a href="#perks">Get Started</a></button>
-          </div>
+        <div id='h-container'>
+            <h2>About me</h2>
+            <section className='container-d'>
+                <div className='left-d'>
+                    <img src="./images/profil/bg.png" alt="Photo de moi" />
+                </div>
+                <div className='right-d'>
+                    <p>
+                        Hello and welcome to my beginner developer portfolio! I'm Clément, a passionate developer who has just started his career in the programming field.
+                    </p>
+                    <p>
+                        Through my studies and personal projects, I have developed strong programming and web development skills using technologies such as HTML, CSS, JavaScript, React. I have also worked on database projects using MySQL, mariaDB.
+                    </p>
+                    <p>
+                        On this portfolio, you will be able to discover my development projects, which I have completed using my current skills. I have worked on both personal and academic projects, which have a variety of features and applications.
+                    </p>
+                    <p>
+                        Feel free to explore my portfolio and contact me if you have any questions or are interested in collaborating. Thank you for visiting and have a nice day!
+                    </p>
+                </div>
+            </section>
         </div>
-      </div>
     );
 };
-
 export default Hero;
