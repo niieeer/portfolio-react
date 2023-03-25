@@ -1,0 +1,83 @@
+#skills {
+    background-color: rgb(227, 224, 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    h2 {
+        font-size: calc(30px + 1vw);
+        padding: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            background-color: rgb(255, 255, 255);
+            padding: 2rem;
+            border-radius: 20px;
+            width: calc(300px + 1vw);
+            height: calc(300px);
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                background-color: rgb(249, 249, 249);
+            }
+
+            .skill-logo {
+                height: 80px;
+                margin-bottom: 1.5rem;
+            }
+
+            .skill-name {
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                font-weight: bold;
+                color: rgb(30, 30, 30);
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .skill-description {
+                font-size: 1.2rem;
+                line-height: 1.5;
+                text-align: justify;
+                color: rgb(100, 100, 100);
+                margin-bottom: 1.5rem;
+            }
+
+            .skill-button {
+                font-size: 1.2rem;
+                padding: 1rem 2.5rem;
+                border-radius: 30px;
+                background-color: rgb(30, 30, 30);
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: 0.3s;
+                outline: none;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(40, 40, 40);
+                }
+            }
+        }
+    }
+}

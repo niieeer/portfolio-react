@@ -1,29 +1,15 @@
 #h-container {
     height: 100vh;
-    padding: 3rem;
+    padding: calc(1rem + 0.5vw);
     background-color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 
     h2 {
         font-size: calc(30px + 1vw);
-        text-decoration: underline;
-    }
-
-    .bt-c {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-
-        button {
-            font-size: calc(15px + 1vw);
-            padding: calc(1rem + 1vw);
-            border-radius: 40px;
-            border: none;
-            cursor: pointer;
-        }
+        letter-spacing: 1px;
     }
 }
 
@@ -31,16 +17,16 @@
     display: flex;
     font-size: calc(10px + 1vw);
     gap: calc(5%);
-    margin: calc(5%);
-    animation: 3s ease slideTopFromBottom;
-
-
+    margin: calc(3%);
+    animation: 1.5s ease slideTopFromBottom;
 
     .left-d {
         width: 30%;
 
         img {
-            width: calc(100%);
+            width: 100%;
+            object-fit: contain;
+            max-height: 50vh;
         }
     }
 
@@ -52,39 +38,77 @@
         gap: calc(5% + 1vw);
         text-align: justify;
         letter-spacing: 1px;
-        overflow: scroll;
-        transform: translateY(500px, 0px) ;
+
+        transform: translateY(500px, 0px);
+
+        &::before {
+            content: "";
+            display: none;
+            border-top: 1px solid black;
+        }
     }
 }
 
 @keyframes slideTopFromBottom {
-    25% {
-      transform: translatey(50%);
-      color: rgba(0, 0, 0, 0);
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
     }
-    100% {
-      transform: translatey(0);
-    }
-  }
 
-@media screen and (max-width: 1200px) {
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #h-container {
+        height: max-content;
+    }
     .container-d {
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .left-d {
-            width: 30%;
+            width: 80%;
             text-align: center;
 
             img {
-                width: calc(80%);
+                width: 100%;
+                object-fit: contain;
+                max-height: 30vh;
                 margin-bottom: 1rem;
             }
         }
 
         .right-d {
+            width: 80%;
             gap: calc(1rem + 1vw);
+
+            &::before {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-d {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .left-d {
+            width: 80%;
+        }
+
+        .right-d {
+            width: 80%;
         }
     }
 }
