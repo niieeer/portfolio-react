@@ -1,10 +1,11 @@
 import React from 'react';
+import Title from './Title';
 
 const Footer = () => {
     return (
-        <div>
-            
-        </div>
+        <footer>
+            <Title title='Footer' />
+        </footer>
     );
 };
 

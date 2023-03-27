@@ -1,9 +1,10 @@
 import React from 'react';
+import Title from './basic/Title';
 
 const Hero = () => {
     return (
         <div id='h-container'>
-            <h2>About me</h2>
+            <Title title='About me' />
             <section className='container-d'>
                 <div className='left-d'>
                     <img src="./images/profil/bg.png" alt="Photo de moi" />

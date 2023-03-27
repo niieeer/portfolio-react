@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "./basic/Title";
 
 function Skills() {
     const skillsData = [
@@ -42,7 +43,7 @@ function Skills() {
 
     return (
         <section id="skills">
-            <h2>Compétences Techniques</h2>
+            <Title title='Technical Skills' />
             <ul className="skill-list">
                 {skillsData.map((skill) => (
                     <li key={skill.name} className="skill-item">
