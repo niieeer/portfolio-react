@@ -3,7 +3,6 @@ import Navigation from '../components/basic/Navigation';
 const Presentation = () => {
     return (
         <section id='p-container'>
-            <Navigation />
             <div className='box'>
                 <h3>I'm Clément.</h3>
                 <p>a web développeur.</p>
