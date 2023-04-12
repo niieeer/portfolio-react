@@ -8,6 +8,7 @@ header {
     justify-content: flex-end;
     align-items: center;
 
+
     .nav-container {
         display: flex;
         padding: calc(0.5rem + 1vw);
@@ -33,6 +34,11 @@ header {
         outline: none;
     }
 
+    .nav-close-btn {
+        visibility: hidden;
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -41,6 +47,7 @@ header {
         justify-content: space-between;
         background-color: black;
         position: fixed;
+        z-index: 20;
 
         .nav-container {
             background-color: rgb(0, 0, 0);
@@ -53,8 +60,10 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: 1s;
+            transition: 0.5s;
             transform: translateY(-50vh);
+            flex-direction: column;
+            font-size: calc(20px + 1vw);
         }
 
         .mobile-active {
@@ -63,7 +72,21 @@ header {
 
         .nav-btn {
             visibility: visible;
+            font-size: calc(1rem + 1vw);
+            display: block;
+            color: white;
             opacity: 1;
+        }
+
+        .nav-close-btn {
+            visibility: visible;
+            font-size: calc(1rem + 1vw);
+            display: block;
+            opacity: 1;
+            color: white;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
         }
     }
 

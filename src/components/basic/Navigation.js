@@ -7,9 +7,8 @@ const Navigation = () => {
 
   const toggleNavMobile = () => {
     navRef.current.classList.toggle('mobile-active');
-    console.log(navRef.current.classList);
   }
-  
+
 
   return (
     <header>
@@ -17,12 +16,12 @@ const Navigation = () => {
         <a href="#h-container">About me</a>
         <a href="#h-container">Technical Skills</a>
         <a href="#h-container">Experience</a>
+        <button className='nav-btn nav-close-btn'>
+        <FaTimes onClick={toggleNavMobile} />
+      </button>
       </nav>
       <button className='nav-btn'>
         <FaBars onClick={toggleNavMobile} />
-      </button>
-      <button>
-        <FaTimes onClick={toggleNavMobile} />
       </button>
     </header >
   );

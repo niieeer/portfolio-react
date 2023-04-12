@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from '../components/basic/Navigation';
 const Presentation = () => {
     return (
         <section id='p-container'>
