@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     font-size: calc(10px + 1vw);
+    padding-bottom: 2rem;
 
     h2 {
         font-size: calc(30px + 1vw);
@@ -33,7 +34,7 @@
             width: 50%;
             padding: calc(0.7rem + 1vw);
             text-align: right;
-
+            
 
             &:nth-child(odd) {
                 align-self: flex-end;
@@ -45,6 +46,7 @@
                 .timeline-content {
                     align-items: flex-start;
                     text-align: left;
+                    
 
                     .circle {
                         right: auto;
@@ -75,8 +77,14 @@
                 background-color: rgb(255, 255, 255);
                 padding: 2rem;
                 border-radius: 0px 0px 5px 5px;
+                transition: 0.5s;
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
                 position: relative;
+
+                &:hover {
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.688);
+                    cursor: pointer;
+                }
 
                 .circle {
                     background-color: rgb(255, 255, 255);
@@ -123,6 +131,8 @@
             justify-content: center;
             align-items: center;
 
+          
+
             &::before {
                 z-index: 0;
                 height: 80%;
@@ -134,6 +144,7 @@
                 width: 100%;
                 z-index: 10;
                 text-align: center;
+
 
                 &:nth-child(odd) {
                     align-self: auto;

@@ -4,7 +4,7 @@ import Title from './Title';
 const Footer = () => {
     return (
         <footer>
-            <Title title='Footer' />
+            <p>COUCOU</p>
         </footer>
     );
 };

@@ -3,26 +3,31 @@ import Title from './basic/Title';
 
 const Experience = () => {
 
+    (async function a() {
+       let response = await fetch('https://api.github.com/users/');
+        console.log(response);
+    }());
+
     const events = [
         {
             id: 1,
             date: "2018",
-            description: "Baccalauréat Technologique STI2D (Sciences et technologies de l'industrie et du développement durable) à Verdun"
+            description: "Technological Baccalaureate STI2D (Sciences and technologies of industry and sustainable development) in Verdun"
         },
         {
             id: 2,
             date: "2022",
-            description: "Vendeur réparateur en informatique, Cash Express à Verdun"
+            description: "Computer repair salesman, Cash Express in Verdun"
         },
         {
             id: 3,
             date: "2022",
-            description: "Développeur Web stagiaire, Institut Gaïané à Nancy"
+            description: "Web developer intern, Institut Gaïané in Nancy"
         },
         {
             id: 4,
             date: "2022",
-            description: "Formation de designer Web, titre professionnel de niveau BAC+2, centre de formation ALAJI à Nancy"
+            description: "Training of Web designer, professional title of level BAC+2, training center ALAJI in Nancy"
         },
     ];
 
