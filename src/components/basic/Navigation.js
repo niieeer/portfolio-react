@@ -19,11 +19,11 @@ const Navigation = () => {
         <a href="#h-container" onClick={hideNavMobile}>About me</a>
         <a href="#skills" onClick={hideNavMobile}>Technical Skills</a>
         <a href="#experience" onClick={hideNavMobile}>Experience</a>
-        <button className='nav-btn nav-close-btn' onClick={toggleNavMobile}>
+        <button className='nav-btn nav-close-btn' aria-label="Close menu" onClick={toggleNavMobile}>
           <FaTimes />
         </button>
       </nav>
-      <button className='nav-btn' onClick={toggleNavMobile}>
+      <button className='nav-btn' aria-label="Open menu" onClick={toggleNavMobile}>
         <FaBars />
       </button>
     </header >

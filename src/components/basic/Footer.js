@@ -4,7 +4,10 @@ import Title from './Title';
 const Footer = () => {
     return (
         <footer>
-            <p>COUCOU</p>
+            <p>© Beaudouin Clément. - Tous droits réservés.</p>
+            <a href="">LindekIn</a>
+            <a href="">Github</a>
+            <a href="">LindekIn</a>
         </footer>
     );
 };
