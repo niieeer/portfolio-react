@@ -3,11 +3,6 @@ import Title from './basic/Title';
 
 const Experience = () => {
 
-    (async function a() {
-       let response = await fetch('https://api.github.com/users/');
-        console.log(response);
-    }());
-
     const events = [
         {
             id: 1,
