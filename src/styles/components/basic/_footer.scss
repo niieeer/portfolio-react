@@ -1,9 +1,23 @@
 footer {
     display: flex;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
+    padding: calc(1rem + 1vw);
     color: rgb(217, 217, 217);
     background-color: rgba(38, 39, 39, 0.821);
     transition: 1s;
     height: 10vh;
+    font-size: calc(10px + 1vw);
+
+    .flex-icon {
+        display: flex;
+        gap: calc(5px + 1vw);
+
+        a {
+            color: white;
+            font-size: calc(15px + 1vw);
+            
+        }
+    }
 }
