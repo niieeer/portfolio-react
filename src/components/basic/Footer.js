@@ -9,7 +9,6 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/clément-beaudouin-1b445b250/">
                     <FaLinkedin />
                 </a>
-
                 <a href="https://github.com/niieeer">
                     <FaGithub />
                 </a>

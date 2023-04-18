@@ -19,7 +19,7 @@ const Navigation = () => {
         <a href="#h-container" onClick={hideNavMobile}>About me</a>
         <a href="#skills" onClick={hideNavMobile}>Technical Skills</a>
         <a href="#experience" onClick={hideNavMobile}>Experience</a>
-        <button className='nav-btn nav-close-btn' aria-label="Close menu" onClick={toggleNavMobile}>
+        <button className='nav-btn nav-close-btn' aria-label="Close menu" onClick={hideNavMobile}>
           <FaTimes />
         </button>
       </nav>

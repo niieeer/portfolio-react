@@ -7,7 +7,7 @@ const Hero = () => {
             <Title title='About me' />
             <section className='container-d'>
                 <div className='left-d'>
-                    <img src="./images/profil/bg.png" alt="Photo de moi" />
+                    <img src="./images/profil/bg.png" alt="Moi" />
                 </div>
                 <div className='right-d'>
                     <p>
